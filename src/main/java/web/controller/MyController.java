@@ -36,7 +36,7 @@ public class MyController {
         return "redirect:/";
     }
 
-    @RequestMapping("/updateInfo")
+    @RequestMapping(value = "/updateInfo")
     public String updateUser(@RequestParam("userId") int id, Model model) {
         model.addAttribute("addUs", service.getUser(id));
         return "user-info";
