@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65784b6d-6774-4947-82bc-f1a83f776179" name="Changes" comment="done!" />
+    <list default="true" id="65784b6d-6774-4947-82bc-f1a83f776179" name="Changes" comment="done!!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,11 +100,38 @@
       <option name="project" value="LOCAL" />
       <updated>1692225007196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done">
+      <created>1692225105042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692225105042</updated>
+    </task>
+    <task id="LOCAL-00003" summary="done!!">
+      <created>1692225256126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692225256126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="done!" />
+    <MESSAGE value="done" />
+    <MESSAGE value="done!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="done!!" />
   </component>
 </project>
