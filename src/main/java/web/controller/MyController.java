@@ -30,20 +30,20 @@ public class MyController {
         return "user-info";
     }
 
-    @RequestMapping("/save")
+    @PostMapping("/save")
     public String saveUser(@ModelAttribute("form2") User user) {
         service.save(user);
         return "redirect:/";
     }
 
-    @RequestMapping(value = "/updateInfo")
-    public String updateUser(@RequestParam("userId") int id, Model model) {
+    @PutMapping("/updateInfo/{id}")
+    public String updateUser(@PathVariable("id") int id, Model model) {
         model.addAttribute("addUs", service.getUser(id));
         return "user-info";
     }
 
-    @RequestMapping("/deleteInfo")
-    public String deleteUser(@RequestParam("userId") int id) {
+    @DeleteMapping("/deleteInfo/{id}")
+    public String deleteUser(@PathVariable("id") int id) {
         service.deleteUser(id);
         return "redirect:/";
     }

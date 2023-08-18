@@ -21,14 +21,15 @@
         <td th:text="${show.getLastName()}">Last Name</td>
         <td th:text="${show.getAge()}">Age</td>
         <td>
-            <form th:name="up " th:action="@{/updateInfo}" th:method="PATCH">
-                <input type="hidden" th:name="userId" th:value="${show.getId()}"/>
+            <form th:name="up " th:action="@{/updateInfo/{id}(id=${show.getId()})}" th:method="PUT">
+                <input type="hidden" name="_method" value="PUT" th:value="${show.getId()}"/>
                 <button type="submit">Update</button>
             </form>
         </td>
         <td>
-            <form th:name="del " th:action="@{/deleteInfo}" th:method="Delete">
-                <input type="hidden" th:name="userId" th:value="${show.getId()}"/>
+            <form th:name="del " th:action="@{/deleteInfo/{id}(id=${show.getId()})}" th:method="delete">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" th:value="${show.getId()}"/>
                 <button type="submit">Delete</button>
             </form>
         </td>
